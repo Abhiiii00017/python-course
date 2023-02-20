@@ -2,12 +2,12 @@ import pgzrun
 music.play('bgm')
 music.set_volume(0.3)
 
-b = Rect((50,50), (50,25))
+b = Actor('bat1',(50,50))
 vx,vy = 3,2
 
 def draw():
     screen.fill('yellow')
-    screen.draw.filled_rect(b,'blue')
+    b.draw()
 
 def update():
     global vx, vy
